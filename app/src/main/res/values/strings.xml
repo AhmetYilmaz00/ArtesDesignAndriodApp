@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">ARoom</string>
-    <string name="right_address">Furnish your reality with ARoom</string>
-    <string name="quality">Bring your dream home to life with\n our app, where you can visualize and place furniture in your space with ease and confidence</string>
-    <string name="g_my_cart">My Cart</string>
+    <string name="app_name">Artes Design</string>
+    <string name="right_address">AR Teknolojisi ile Mağazayı Evinize Getirdik</string>
+    <string name="quality"></string>
+    <string name="g_my_cart">Sepetim</string>
+    <string name="artes_design">Artes Design</string>
 </resources>

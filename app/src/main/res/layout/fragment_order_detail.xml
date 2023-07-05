@@ -89,7 +89,7 @@
             android:id="@+id/tvShippingAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address"
+            android:text="Adres"
             android:fontFamily="@font/poppins_thin"
             app:layout_constraintStart_toStartOf="@id/guideline1"
             android:textColor="@color/black"
@@ -113,7 +113,7 @@
                 android:id="@+id/tvFullName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Full Name"
+                android:text="Ad Soyad"
                 android:textSize="13sp" />
 
             <TextView
@@ -127,7 +127,7 @@
                 android:id="@+id/tvPhoneNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone"
+                android:text="Telefon Numarası"
                 android:textSize="13sp" />
 
         </LinearLayout>
@@ -148,7 +148,7 @@
             android:id="@+id/tvProducts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Products"
+            android:text="Ürünler"
             android:fontFamily="@font/poppins_thin"
             app:layout_constraintStart_toStartOf="@id/guideline1"
             android:textColor="@color/black"
@@ -185,7 +185,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Total"
+                android:text="Toplam"
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/sf_pro_display"

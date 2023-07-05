@@ -37,7 +37,7 @@
                 android:paddingBottom="10dp"
                 android:singleLine="true"
                 android:textColorHint="#919394"
-                android:hint="Search"
+                android:hint="Ara"
                 android:imeOptions="actionSearch"
                 android:inputType="textCapWords"
                 android:textSize="15sp"

@@ -7,27 +7,26 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/blury_background"
+        android:src="@drawable/artes_logo"
+        android:alpha="0.05"
         android:scaleType="centerCrop" />
-    
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
         <TextView
             android:id="@+id/tv_app_name"
+            style="@style/h3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/h3"
             android:layout_marginTop="120dp"
-            android:drawableStart="@drawable/small_removebg_preview_transformed"
-
             android:drawablePadding="3dp"
+            android:text="@string/artes_design"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="ARoom" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/tv_right_address_for_shopping"
@@ -57,29 +56,30 @@
             android:text="@string/quality"
             android:layout_marginTop="15dp"
             />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_register_account_options"
+            style="@style/blueButtonStyle"
             android:layout_width="@dimen/medium_button_width"
             android:layout_height="@dimen/medium_button_height"
-            style="@style/blueButtonStyle"
-            app:layout_constraintTop_toBottomOf="@id/tv_quality"
-            app:layout_constraintStart_toStartOf="@id/tv_quality"
-            app:layout_constraintEnd_toEndOf="@id/tv_quality"
+            android:text="Kayıt Ol"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:text="Register" />
+            app:layout_constraintEnd_toEndOf="@id/tv_quality"
+            app:layout_constraintStart_toStartOf="@id/tv_quality"
+            app:layout_constraintTop_toBottomOf="@id/tv_quality" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login_account_options"
+            style="@style/whiteButtonStyle"
             android:layout_width="@dimen/medium_button_width"
             android:layout_height="@dimen/medium_button_height"
             android:layout_marginTop="10dp"
-            style="@style/whiteButtonStyle"
-            app:layout_constraintTop_toBottomOf="@id/btn_register_account_options"
-            app:layout_constraintStart_toStartOf="@id/tv_quality"
+            android:text="Giriş Yap"
             app:layout_constraintEnd_toEndOf="@id/tv_quality"
-            android:text="Login" />
+            app:layout_constraintStart_toStartOf="@id/tv_quality"
+            app:layout_constraintTop_toBottomOf="@id/btn_register_account_options" />
 
-        
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

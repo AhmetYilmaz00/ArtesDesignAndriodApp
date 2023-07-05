@@ -16,17 +16,16 @@
 
         <TextView
             android:id="@+id/tv_app_name"
+            style="@style/h3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/h3"
             android:layout_marginTop="50dp"
-            android:drawableStart="@drawable/ic_kleine_shape"
             android:drawablePadding="6dp"
+            android:text="@string/artes_design"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/guideline_login_left"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="@id/guideline_login_right"
-            android:text="ARoom" />
+            app:layout_constraintStart_toStartOf="@id/guideline_login_left"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_lets_register"
@@ -37,7 +36,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_app_name"
             app:layout_constraintStart_toStartOf="@id/guideline_login_left"
             app:layout_constraintEnd_toEndOf="@id/guideline_login_right"
-            android:text="Let's Register!"
+            android:text="Şimdi Kayıt Ol"
             android:textAlignment="center"
             android:gravity="center"
             android:textSize="35sp"
@@ -53,7 +52,7 @@
             app:layout_constraintEnd_toEndOf="@id/guideline_login_right"
             android:textAlignment="center"
             android:gravity="center"
-            android:text="Do you have an account? log in"
+            android:text="Zaten bir hesabın var mı? Giriş yap"
             android:layout_marginTop="5dp"
             />
 
@@ -65,7 +64,7 @@
             app:layout_constraintEnd_toEndOf="@id/guideline_login_right"
             app:layout_constraintTop_toBottomOf="@id/tv_do_you_have_account"
             style="@style/editText"
-            android:hint="First Name"
+            android:hint="Ad"
             android:inputType="text"
             android:layout_marginTop="50dp" />
 
@@ -77,7 +76,7 @@
             app:layout_constraintEnd_toEndOf="@id/guideline_login_right"
             app:layout_constraintTop_toBottomOf="@id/ed_first_name_register"
             style="@style/editText"
-            android:hint="Last Name"
+            android:hint="Soyad"
             android:inputType="text"
             android:layout_marginTop="15dp" />
 
@@ -89,7 +88,7 @@
             app:layout_constraintEnd_toEndOf="@id/guideline_login_right"
             app:layout_constraintTop_toBottomOf="@id/ed_last_name_register"
             style="@style/editText"
-            android:hint="Email"
+            android:hint="E-Posta"
             android:inputType="textEmailAddress"
             android:layout_marginTop="15dp" />
 
@@ -101,7 +100,7 @@
             app:layout_constraintEnd_toEndOf="@id/guideline_login_right"
             app:layout_constraintTop_toBottomOf="@id/ed_email_register"
             style="@style/editText"
-            android:hint="Password"
+            android:hint="Şifre"
             android:inputType="textPassword"
             android:layout_marginTop="15dp" />
 
@@ -152,7 +151,7 @@
             app:layout_constraintStart_toStartOf="@id/guideline_login_left"
             app:layout_constraintEnd_toEndOf="@id/guideline_login_right"
             android:layout_marginTop="15dp"
-            android:text="REGISTER"
+            android:text="KAYIT OL"
             app:spinning_bar_color="@color/white"/>
 
 

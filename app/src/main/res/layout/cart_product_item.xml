@@ -28,7 +28,7 @@
             app:layout_constraintBottom_toTopOf="@id/line"
             app:layout_constraintStart_toStartOf="parent"
             android:scaleType="centerCrop"
-            android:src="@color/g_blue"/>
+            android:src="@color/g_orange_yellow"/>
 
         <TextView
             android:id="@+id/tv_product_cart_name"
@@ -37,7 +37,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/poppins_light"
-            android:text="Buffet sofa"
+            android:text="Artes Sandalye"
             android:maxLines="1"
             android:ellipsize="end"
             android:textColor="@color/black"
@@ -51,7 +51,7 @@
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
-            android:text="LE 1560"
+            android:text="1560 TL"
             android:textColor="@color/black"
             android:textSize="10sp"
             android:textStyle="bold"
@@ -92,7 +92,7 @@
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginTop="5dp"
-            android:src="@color/g_blue"
+            android:src="@color/g_orange_yellow"
             app:layout_constraintStart_toStartOf="@id/tv_product_cart_price"
             app:layout_constraintTop_toBottomOf="@id/tv_product_cart_price" />
 

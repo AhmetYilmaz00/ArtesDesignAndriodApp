@@ -17,7 +17,7 @@
         android:id="@+id/img_color"
         android:layout_width="21dp"
         android:layout_height="21dp"
-        android:src="@color/g_blue"
+        android:src="@color/g_orange_yellow"
         app:layout_constraintStart_toStartOf="@id/img_shadow"
         app:layout_constraintTop_toTopOf="@id/img_shadow"
         app:layout_constraintEnd_toEndOf="@id/img_shadow"

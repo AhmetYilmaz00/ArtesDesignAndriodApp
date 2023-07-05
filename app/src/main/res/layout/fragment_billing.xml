@@ -36,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
                     android:fontFamily="@font/poppins_light"
-                    android:text="Billing"
+                    android:text="Faturalandırma"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="@id/imageCloseBilling"
@@ -50,7 +50,7 @@
             android:id="@+id/tvPaymentMethods"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Payment Methods"
+            android:text="Ödeme Methodu"
             android:fontFamily="@font/poppins_thin"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/toolbarBilling"
@@ -63,7 +63,7 @@
             android:id="@+id/tvPaymentExplanation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="ARoom dose not support virtual payments. You can pay when you receive your order."
+            android:text="Ödeme methodları yakında eklenecektir."
             android:fontFamily="@font/sf_pro_display"
             app:layout_constraintTop_toBottomOf="@id/tvPaymentMethods"
             app:layout_constraintStart_toStartOf="@id/guideline1"
@@ -87,7 +87,7 @@
             android:id="@+id/tvShoppingAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Shipping Address"
+            android:text="Sipariş Adresleri"
             android:fontFamily="@font/poppins_thin"
             app:layout_constraintStart_toStartOf="@id/guideline1"
             android:textColor="@color/black"
@@ -105,7 +105,7 @@
             app:layout_constraintTop_toTopOf="@id/tvShoppingAddress"
             app:layout_constraintBottom_toBottomOf="@id/tvShoppingAddress"
             android:src="@drawable/ic_add"
-            app:tint="@color/g_dark_blue"
+            app:tint="@color/g_orange_yellow"
             />
 
         <FrameLayout
@@ -130,7 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:indeterminateTint="@color/g_blue"
+                android:indeterminateTint="@color/g_orange_yellow"
                 android:visibility="gone"/>
 
         </FrameLayout>
@@ -190,7 +190,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
                 android:fontFamily="@font/sf_pro_display"
-                android:text="Total"
+                android:text="Toplam"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -206,7 +206,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="15dp"
                 android:fontFamily="@font/sf_pro_display"
-                android:text="$150"
+                android:text="150TL"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -227,7 +227,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="45dp"
             android:layout_marginBottom="20dp"
-            android:text="Place Order"
+            android:text="Sipariş Ver"
             app:spinning_bar_color="@color/white"/>
 
 
