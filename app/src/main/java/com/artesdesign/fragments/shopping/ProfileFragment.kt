@@ -14,7 +14,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.artesdesign.activities.LoginRegisterActivity
-import com.artesdesign.aroom.BuildConfig
+import com.artesdesign.augmentedReality.BuildConfig
 import com.artesdesign.augmentedReality.R
 import com.artesdesign.augmentedReality.databinding.FragmentProfileBinding
 import com.artesdesign.util.Resource

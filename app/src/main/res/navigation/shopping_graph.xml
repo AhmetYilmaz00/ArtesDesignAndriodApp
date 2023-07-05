@@ -60,7 +60,7 @@
         tools:layout="@layout/fragment_product_details">
         <argument
             android:name="product"
-            app:argType="com.example.data.Product" />
+            app:argType="com.artesdesign.data.Product" />
         <action
             android:id="@+id/action_productDetailsFragment_to_vrFragment"
             app:destination="@id/vrFragment" />
@@ -77,7 +77,7 @@
         tools:layout="@layout/fragment_address">
         <argument
             android:name="address"
-            app:argType="com.example.data.Address"
+            app:argType="com.artesdesign.data.Address"
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>
@@ -94,7 +94,7 @@
             app:argType="float" />
         <argument
             android:name="products"
-            app:argType="com.example.data.CartProduct[]" />
+            app:argType="com.artesdesign.data.CartProduct[]" />
         <argument
             android:name="payment"
             app:argType="boolean" />
@@ -120,6 +120,6 @@
         android:label="OrderDetailsFragment" >
         <argument
             android:name="order"
-            app:argType="com.example.data.order.Order" />
+            app:argType="com.artesdesign.data.order.Order" />
     </fragment>
 </navigation>

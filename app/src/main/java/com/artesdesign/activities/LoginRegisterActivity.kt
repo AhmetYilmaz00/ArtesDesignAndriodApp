@@ -2,7 +2,7 @@ package com.artesdesign.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.artesdesign.aroom.R
+import com.artesdesign.augmentedReality.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

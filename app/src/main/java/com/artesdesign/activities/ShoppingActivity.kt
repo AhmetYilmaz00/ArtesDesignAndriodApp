@@ -6,8 +6,8 @@ import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.artesdesign.aroom.R
-import com.artesdesign.aroom.databinding.ActivityShoppingBinding
+import com.artesdesign.augmentedReality.R
+import com.artesdesign.augmentedReality.databinding.ActivityShoppingBinding
 import com.artesdesign.util.Resource
 import com.artesdesign.viewmodel.shopping.CartViewModel
 import dagger.hilt.android.AndroidEntryPoint
