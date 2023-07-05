@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "984814080429",
-    "project_id": "aroom-69cac",
-    "storage_bucket": "aroom-69cac.appspot.com"
+    "project_number": "206611421335",
+    "project_id": "artesdesignar",
+    "storage_bucket": "artesdesignar.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:984814080429:android:5a1b4ccc577c6d2c69d124",
+        "mobilesdk_app_id": "1:206611421335:android:4b3d834262ac16f5f471d2",
         "android_client_info": {
-          "package_name": "com.example.aroom"
+          "package_name": "com.artesdesign.augmentedReality"
         }
       },
       "oauth_client": [
         {
-          "client_id": "984814080429-s232n8c1c7fmke69mrtgadlmr5b56kpj.apps.googleusercontent.com",
+          "client_id": "206611421335-ub9opj61p8ainp5vk8m8h4cnvqhmv22o.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAyY6PKkSGE5ebHE4aXeqY826zjodC_H7k"
+          "current_key": "AIzaSyCvAThJYumZB6F9z_Cfwq5SjhsynT_yudI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "984814080429-s232n8c1c7fmke69mrtgadlmr5b56kpj.apps.googleusercontent.com",
+              "client_id": "206611421335-ub9opj61p8ainp5vk8m8h4cnvqhmv22o.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

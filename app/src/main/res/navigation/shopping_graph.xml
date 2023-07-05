@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/cartFragment"
-        android:name="com.example.fragments.shopping.CartFragment"
+        android:name="com.artesdesign.fragments.shopping.CartFragment"
         android:label="CartFragment"
         tools:layout="@layout/fragment_cart">
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.fragments.shopping.HomeFragment"
+        android:name="com.artesdesign.fragments.shopping.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.fragments.shopping.ProfileFragment"
+        android:name="com.artesdesign.fragments.shopping.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile">
         <action
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.fragments.shopping.SearchFragment"
+        android:name="com.artesdesign.fragments.shopping.SearchFragment"
         android:label="SearchFragment"
         tools:layout="@layout/fragment_search">
         <action
@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/productDetailsFragment"
-        android:name="com.example.fragments.shopping.ProductDetailsFragment"
+        android:name="com.artesdesign.fragments.shopping.ProductDetailsFragment"
         android:label="ProductDetailsFragment"
         tools:layout="@layout/fragment_product_details">
         <argument
@@ -68,11 +68,11 @@
     <fragment
         tools:layout="@layout/fragment_vr"
         android:id="@+id/vrFragment"
-        android:name="com.example.fragments.ar.VrFragment"
+        android:name="com.artesdesign.fragments.ar.VrFragment"
         android:label="VrFragment" />
     <fragment
         android:id="@+id/addressFragment"
-        android:name="com.example.fragments.shopping.AddressFragment"
+        android:name="com.artesdesign.fragments.shopping.AddressFragment"
         android:label="AddressFragment"
         tools:layout="@layout/fragment_address">
         <argument
@@ -84,7 +84,7 @@
     <fragment
         tools:layout="@layout/fragment_billing"
         android:id="@+id/billingFragment"
-        android:name="com.example.fragments.shopping.BillingFragment"
+        android:name="com.artesdesign.fragments.shopping.BillingFragment"
         android:label="BillingFragment" >
         <action
             android:id="@+id/action_billingFragment_to_addressFragment"
@@ -102,12 +102,12 @@
     <fragment
         tools:layout="@layout/fragment_user_account"
         android:id="@+id/userAccountFragment"
-        android:name="com.example.fragments.settings.UserAccountFragment"
+        android:name="com.artesdesign.fragments.settings.UserAccountFragment"
         android:label="UserAccountFragment" />
     <fragment
         tools:layout="@layout/fragment_orders"
         android:id="@+id/ordersFragment"
-        android:name="com.example.fragments.settings.OrdersFragment"
+        android:name="com.artesdesign.fragments.settings.OrdersFragment"
         android:label="OrdersFragment" >
         <action
             android:id="@+id/action_ordersFragment_to_orderDetailsFragment"
@@ -116,7 +116,7 @@
     <fragment
         android:id="@+id/orderDetailsFragment"
         tools:layout="@layout/fragment_order_detail"
-        android:name="com.example.fragments.settings.OrderDetailsFragment"
+        android:name="com.artesdesign.fragments.settings.OrderDetailsFragment"
         android:label="OrderDetailsFragment" >
         <argument
             android:name="order"

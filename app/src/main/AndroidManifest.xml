@@ -11,10 +11,13 @@
     <uses-feature
         android:name="android.hardware.camera.ar"
         android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
 
     <application
-        android:name="com.example.ARoomApplication"
+        android:name="com.artesdesign.AugmentedReality"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -29,7 +32,7 @@
             android:value="required" />
 
         <activity
-            android:name="com.example.activities.LoginRegisterActivity"
+            android:name="com.artesdesign.activities.LoginRegisterActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +41,7 @@
         </activity>
 
         <activity
-            android:name="com.example.activities.ShoppingActivity"
+            android:name="com.artesdesign.activities.ShoppingActivity"
             android:exported="true" />
 
 

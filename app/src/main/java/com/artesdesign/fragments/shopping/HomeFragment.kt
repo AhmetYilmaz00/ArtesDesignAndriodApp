@@ -1,0 +1,54 @@
+package com.artesdesign.fragments.shopping
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.artesdesign.adapters.HomeViewPagerAdapter
+import com.artesdesign.augmentedReality.R
+import com.artesdesign.augmentedReality.databinding.FragmentHomeBinding
+import com.artesdesign.fragments.categories.*
+import com.google.android.material.tabs.TabLayoutMediator
+
+class HomeFragment :Fragment(R.layout.fragment_home) {
+
+    private lateinit var binding: FragmentHomeBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View{
+        binding = FragmentHomeBinding.inflate(inflater)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val categoriesFragments = arrayListOf<Fragment>(
+            MainCategoryFragment(),
+            ChairFragment(),
+            CupboardFragment(),
+            TableFragment(),
+            SofaFragment(),
+            BedFragment()
+        )
+
+        binding.viewPagerHome.isUserInputEnabled = false
+
+        val viewPager2Adapter = HomeViewPagerAdapter(categoriesFragments,childFragmentManager,lifecycle)
+        binding.viewPagerHome.adapter = viewPager2Adapter
+        TabLayoutMediator(binding.tabLayout,binding.viewPagerHome){ tab,position ->
+            when(position){
+                0 -> tab.text = "Ana Menü"
+                1 -> tab.text = "Sandalye"
+                2 -> tab.text = "Gardolap"
+                3 -> tab.text = "Masa"
+                4 -> tab.text = "Kanepe"
+                5 -> tab.text = "Yatak"
+            }
+        }.attach()
+    }
+}
