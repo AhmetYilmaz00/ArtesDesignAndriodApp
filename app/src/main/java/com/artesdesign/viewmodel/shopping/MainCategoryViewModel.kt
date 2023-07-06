@@ -42,7 +42,7 @@ class MainCategoryViewModel @Inject constructor(
         viewModelScope.launch {
             _specialProducts.emit(Resource.Loading())
         }
-        firestore.collection("Products").whereEqualTo("category", "Sofa").get()
+        firestore.collection("Products").whereEqualTo("category", "Kanepe").get()
             .addOnSuccessListener { result ->
 
                 val bestDealsProductList = result.toObjects(Product::class.java)
@@ -65,7 +65,7 @@ class MainCategoryViewModel @Inject constructor(
             _specialProducts.emit(Resource.Loading())
         }
 
-        firestore.collection("Products").whereEqualTo("category", "Chair").get()
+        firestore.collection("Products").whereEqualTo("category", "Sandalye").get()
             .addOnSuccessListener { result ->
                 val specialProductsList = result.toObjects(Product::class.java)
 

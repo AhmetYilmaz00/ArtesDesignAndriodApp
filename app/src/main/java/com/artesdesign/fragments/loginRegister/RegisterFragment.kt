@@ -1,5 +1,6 @@
 package com.artesdesign.fragments.loginRegister
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.artesdesign.activities.ShoppingActivity
 import com.artesdesign.augmentedReality.R
 import com.artesdesign.augmentedReality.databinding.FragmentRegisterBinding
 import com.artesdesign.data.User
@@ -32,14 +34,13 @@ class RegisterFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentRegisterBinding.inflate(inflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.apply {
 
             tvDoYouHaveAccount.setOnClickListener {
@@ -67,6 +68,10 @@ class RegisterFragment : Fragment() {
                         Log.d("test", it.data.toString())
                         binding.btnRegisterRegister.revertAnimation()
                         Toast.makeText(requireContext(),"Kayıt Başarılı!",Toast.LENGTH_SHORT).show()
+                        Intent(requireActivity(), ShoppingActivity::class.java).also { intent->
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+                            startActivity(intent)
+                        }
                     }
 
                     is Resource.Error -> {

@@ -26,7 +26,7 @@ class CategoryViewModel constructor(
         fetchOfferProducts()
     }
 
-    fun fetchOfferProducts (){
+    private fun fetchOfferProducts (){
 
         viewModelScope.launch {
             _offerProducts.emit(Resource.Loading())
@@ -46,7 +46,7 @@ class CategoryViewModel constructor(
             }
     }
 
-    fun fetchBestProducts (){
+    private fun fetchBestProducts (){
 
         viewModelScope.launch {
             _bestProducts.emit(Resource.Loading())
