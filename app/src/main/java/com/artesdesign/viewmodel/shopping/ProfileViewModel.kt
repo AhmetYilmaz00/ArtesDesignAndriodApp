@@ -1,5 +1,6 @@
 package com.artesdesign.viewmodel.shopping
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.artesdesign.data.User
@@ -23,16 +24,21 @@ class ProfileViewModel @Inject constructor(
     init {
         getUser()
     }
-    fun getUser (){
+    private fun getUser (){
         
         viewModelScope.launch { _user.emit(Resource.Loading()) }
-        
         firestore.collection("user").document(auth.uid!!)
             .addSnapshotListener { value, error ->
                 if(error != null){
                     viewModelScope.launch { _user.emit(Resource.Error(error.message.toString())) }
                 } else{
-                    val user = value?.toObject(User::class.java)
+                  //  val user = value?.toObject(User::class.java)
+                    val user =  User(
+                        value?.getString("firstName")!!,
+                        value.getString("lastName")!!,
+                        value.getString("email")!!,
+                        value.getString("imagePath")!!
+                    )
                     user?.let {
                         viewModelScope.launch { _user.emit(Resource.Success(user)) }
                     }

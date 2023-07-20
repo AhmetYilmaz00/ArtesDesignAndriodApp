@@ -23,6 +23,7 @@ import com.artesdesign.viewmodel.shopping.ProfileViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 
+@Suppress("DEPRECATION")
 @AndroidEntryPoint
 class ProfileFragment :Fragment(R.layout.fragment_profile) {
     lateinit var binding : FragmentProfileBinding
@@ -72,7 +73,6 @@ class ProfileFragment :Fragment(R.layout.fragment_profile) {
                 when(it){
                     is Resource.Loading ->{
                         showProgressBar()
-
                     }
                     is Resource.Success ->{
                         hideProgressBar()
@@ -89,7 +89,6 @@ class ProfileFragment :Fragment(R.layout.fragment_profile) {
                 }
             }
         }
-
     }
 
     private fun hideProgressBar() {
